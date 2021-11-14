@@ -3,8 +3,8 @@
 pragma solidity ^0.8.0;
 
 contract VolcanoCoin {
-uint totalSupply = 10000;
-address owner;
+    uint totalSupply = 10000;
+    address owner;
 
     event NewTotalSupply(uint totalSupply);
 
