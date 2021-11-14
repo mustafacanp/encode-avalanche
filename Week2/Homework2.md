@@ -1,0 +1,24 @@
+0xb9316bbbae1cd21cd824de8651c72582261230724b1957abdeb466aa96a359c9
+The dao hack
+
+0x4fc1580e7f66c58b7c26881cce0aab9c3509afe6e507527f30566fbf8039bcd0
+Uniswap V2 Creation Transaction (see the first line: [2020-06-05](https://etherscan.io/address/0x7a250d5630b4cf539739df2c5dacb4c659f2488d#code))
+
+0x552bc0322d78c5648c5efa21d2daa2d0f14901ad4b15531f1ab5bbe5674de34f
+Polynetwork exploit hack
+
+0x7a026bf79b36580bf7ef174711a3de823ff3c93c65304c3acc0323c77d62d0ed
+Polynetwork exploit rewarded to hacker and offered a job
+
+0x814e6a21c8eb34b62a05c1d0b14ee932873c62ef3c8575dc49bcf12004714eda
+
+---
+
+0xd8da6bf26964af9d7eed9e03e53415d37aa96045
+vitalilk.eth
+
+0x1db3439a222c519ab44bb1144fc28167b4fa6ee6
+Another wallet from Vitalik - https://app.proofofhumanity.id/profile/0x1db3439a222c519ab44bb1144fc28167b4fa6ee6
+
+0x000000000000000000000000000000000000dEaD
+It is a burn address (BlackHole) which keeps burned ETHs.
