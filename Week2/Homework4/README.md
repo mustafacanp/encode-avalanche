@@ -42,7 +42,7 @@
 
 5. Add an event to the transfer function to indicate that a transfer has taken place, it should record the amount and the recipient address.
 
-   **Added to the contract (with extra sender data).**
+   **Added to the contract.**
 
 6. We want to keep a record for each user's transfers. Create a `struct` called `Payment` that can be used to hold the transfer amount and the recipient's address.
 
