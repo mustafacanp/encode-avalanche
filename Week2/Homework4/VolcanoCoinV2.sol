@@ -14,7 +14,7 @@ contract VolcanoCoin {
     }
 
     event TotalSupplyChanged(uint totalSupply);
-    event Transfer(address sender, address recipient, uint amount);
+    event Transfer(address recipient, uint amount);
 
     constructor() {
         owner = msg.sender;
@@ -40,7 +40,7 @@ contract VolcanoCoin {
         balances[msg.sender] -= _amount;
         balances[_recipient] += _amount;
 
-        emit Transfer(msg.sender, _recipient, _amount);
+        emit Transfer(_recipient, _amount);
         payments[msg.sender].push(Payment(_amount, _recipient));
     }
 }
