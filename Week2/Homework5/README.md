@@ -42,8 +42,6 @@ Inheriting these contracts will provide a significantly higher degree of securit
 
 13. Deploy your contract to the Rinkeby test network and try exchanging tokens with your team.
 
-    **Resources**
+**Resources**
 
-    https://github.com/OpenZeppelin/openzeppelincontracts/blob/master/contracts/token/ERC20/ERC20.sol
-
-    (https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
+https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol
