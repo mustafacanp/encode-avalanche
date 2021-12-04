@@ -1,0 +1,23 @@
+{
+  "name": "homework7",
+  "version": "1.0.0",
+  "description": "Decentralized storage providers allow participants to store data online without fear of location-based restrictions.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinata/sdk": "^1.1.23",
+    "axios": "^0.21.4",
+    "canvas": "^2.8.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
