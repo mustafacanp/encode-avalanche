@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract VolcanoToken is ERC721, Ownable {
-    uint tokenID = 0;
+    uint public tokenID = 0;
 
     struct Volcano {
         uint timestamp;

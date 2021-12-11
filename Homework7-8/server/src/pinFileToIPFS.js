@@ -5,13 +5,13 @@ const { getNftFilePath } = require("./helper");
 
 const pinata = pinataSDK(PINATA_API_KEY, PINATA_SECRET_API_KEY);
 
-const pinFileToIPFS = async function (filename, pinataName) {
-  const filePath = getNftFilePath(filename);
+const pinFileToIPFS = async function (name) {
+  const filePath = getNftFilePath("temp");
   const readableStreamForFile = fs.createReadStream(filePath);
 
   const options = {
     pinataMetadata: {
-      name: pinataName,
+      name,
       keyvalues: {
         customKey: "customValue",
         customKey2: "customValue2",

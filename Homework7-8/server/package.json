@@ -1,11 +1,11 @@
 {
-  "name": "homework7",
+  "name": "homework7-server",
   "version": "1.0.0",
   "description": "Decentralized storage providers allow participants to store data online without fear of location-based restrictions.",
   "main": "index.js",
   "scripts": {
     "build": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js",
+    "start": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,6 +15,7 @@
     "@pinata/sdk": "^1.1.23",
     "axios": "^0.21.4",
     "canvas": "^2.8.0",
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },

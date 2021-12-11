@@ -1,9 +1,9 @@
 const fs = require("fs");
 const { createCanvas, loadImage } = require("canvas");
-const { CANVAS_WIDTH, CANVAS_HEIGHT } = require("./constants");
+const { CANVAS_WIDTH, CANVAS_HEIGHT, BASE_URL } = require("./constants");
 const { getNftFilePath } = require("./helper");
 
-const generateImage = async function (filename, name) {
+const generateImage = async function (name) {
   const canvas = createCanvas(CANVAS_WIDTH, CANVAS_HEIGHT);
   const context = canvas.getContext("2d");
 
@@ -60,15 +60,15 @@ const generateImage = async function (filename, name) {
   );
 
   // Background Image
-  const bgImage = await loadImage("./images/bg.png");
+  const bgImage = await loadImage(`${BASE_URL}/bg.png`);
   context.drawImage(bgImage, 130, 140, 300, 200);
   // Logo
-  const logoImage = await loadImage("./images/logo.png");
+  const logoImage = await loadImage(`${BASE_URL}/logo.png`);
   context.drawImage(logoImage, 150, CANVAS_HEIGHT - 60, 50, 50);
 
   // Generate File
   const buffer = canvas.toBuffer("image/png");
-  const filePath = getNftFilePath(filename);
+  const filePath = getNftFilePath("temp");
   fs.writeFileSync(filePath, buffer);
 };
 
