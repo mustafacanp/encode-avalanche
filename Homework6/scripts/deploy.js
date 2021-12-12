@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const VolcanoToken = await hre.ethers.getContractFactory("VolcanoToken");
-  const volcanoToken = await VolcanoToken.deploy("VolcanoToken", "VNC");
+  const EncodeToken = await hre.ethers.getContractFactory("EncodeToken");
+  const encodeToken = await EncodeToken.deploy("EncodeToken", "VNC");
 
-  await volcanoToken.deployed();
+  await encodeToken.deployed();
 
-  console.log("VolcanoToken deployed to:", volcanoToken.address);
+  console.log("EncodeToken deployed to:", encodeToken.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere

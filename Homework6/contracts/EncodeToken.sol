@@ -5,21 +5,21 @@ import "hardhat/console.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract VolcanoToken is ERC721, Ownable {
+contract EncodeToken is ERC721, Ownable {
     uint public tokenID = 1;
 
-    struct Volcano {
+    struct Token {
         uint timestamp;
         uint tokenId;
         string tokenURI;
     }
 
-    mapping(address => Volcano[]) public ownership;
+    mapping(address => Token[]) public ownership;
 
     constructor(string memory name, string memory symbol) ERC721(name, symbol) {}
 
     function mint(string memory _tokenURI) public {
-        Volcano memory token = Volcano({
+        Token memory token = Token({
             timestamp: block.timestamp,
             tokenId: tokenID,
             tokenURI: _tokenURI
@@ -48,7 +48,7 @@ contract VolcanoToken is ERC721, Ownable {
 
     function removeTokenFromOwnership(uint tokenId) internal {
         uint tokenCount = ownership[msg.sender].length;
-        Volcano[] storage userTokens = ownership[msg.sender];
+        Token[] storage userTokens = ownership[msg.sender];
         require(tokenCount > 0);
         for(uint i=0; i<tokenCount; i++) {
             if(ownership[msg.sender][i].tokenId == tokenId){

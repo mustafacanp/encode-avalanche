@@ -1,10 +1,18 @@
 # Development Environment Steps
 
-Run the following command on Homework6 folder: `npx hardhat node`
+Run the following commands on `Homework6` folder:
 
-Run the following command on `Homework7/client` folder: `yarn start`
+`npx hardhat node` starts local node
 
-Run the following command on `Homework7/server` folder: `yarn start`
+`npx hardhat run scripts/deploy.js --network localhost` deploys contract
+
+Run the following command on `Homework7-8/client` folder:
+
+`yarn start`
+
+Run the following command on `Homework7-8/server` folder:
+
+`yarn start`
 
 # Homework 7 - Using Decentralized Storage
 

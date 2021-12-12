@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
 import Web3 from "web3";
 import axios from "axios";
-import nftAbi from "./contracts/VolcanoToken.json"; // Copied ABI from Homework6
 
 import "./App.css";
+
+// Contract deployed to the Rinkeby test network
+// https://rinkeby.etherscan.io/address/0xc2a00766ca160d3dace6da0a5942e85c86b94350
+import nftAbi from "./contracts/EncodeToken.json"; // Copied ABI from Homework6
+const contractAddress = "0xC2A00766cA160d3dAcE6Da0A5942E85C86B94350";
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -36,10 +40,7 @@ function App() {
   window.ethereum.request({ method: "eth_requestAccounts" });
 
   // Initialise contract
-  const contract = new web3.eth.Contract(
-    nftAbi.abi,
-    "0x5FbDB2315678afecb367f032d93F642f64180aa3"
-  );
+  const contract = new web3.eth.Contract(nftAbi.abi, contractAddress);
 
   // Load accounts from MetaMask
   const loadWeb3Accounts = async () => {
