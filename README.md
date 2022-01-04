@@ -6,13 +6,13 @@ Encode Avalanche Bootcamp
 
 ```sh
 npm init -y
-npm install --save-dev hardhat
+yarn add -D hardhat
 npx hardhat
-npm install --save ethers
-npm install --save-dev "hardhat@^2.7.0" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"
+yarn add ethers
+yarn add -D "hardhat@^2.7.0" "@nomiclabs/hardhat-waffle@^2.0.0" "ethereum-waffle@^3.0.0" "chai@^4.2.0" "@nomiclabs/hardhat-ethers@^2.0.0" "ethers@^5.0.0"
 
-npm install @openzeppelin/contracts
-npm install --save-dev @openzeppelin/test-helpers
+yarn add @openzeppelin/contracts
+yarn add -D @openzeppelin/test-helpers
 
 
 npx hardhat node
